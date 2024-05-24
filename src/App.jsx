@@ -1,5 +1,14 @@
+import UserPage from "./components/UserPage";
+import UserProvider from "./context/UserProvider";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <UserProvider>
+        <UserPage />
+      </UserProvider>
+    </>
+  );
 }
 
 export default App;
